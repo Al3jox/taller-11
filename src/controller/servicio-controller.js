@@ -11,7 +11,8 @@ servicioCtr.crearServicio = async(req, res) => {
         descripcion, 
         tiempoEstimado,  
         precio, 
-        placa
+        linkImg
+        // placa
     })
 
     await nuevoServicio.save()

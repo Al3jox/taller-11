@@ -3,6 +3,7 @@ const app = express();
 const morgan = require('morgan');
 const cors = require('cors');
 const bodyParser = require('body-parser');
+const req = require('express/lib/request');
 
 // Requerimos la BD
 require('./database')
@@ -22,6 +23,7 @@ app.use('/proveedor', require('./routes/proveedor-routes'));
 app.use('/producto', require('./routes/producto-routes'));
 app.use('/cliente', require('./routes/cliente-routes'));
 app.use('/administrador', require('./routes/administrador-routes'));
+app.use('/contacto', require('./routes/contacto-routes'));
 
 // Oir el puerto
 app.listen(app.get('Port'), () =>{

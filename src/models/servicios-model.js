@@ -6,8 +6,9 @@ const servicioSchema = new Schema({
     descripcion: String,  
     tiempoEstimado: Number, 
     precio: Number,
-    placa: String,
-    fechaRealizacionServicio: {type: Date, default:Date.now}
+    linkImg: String
+    // placa: String,
+    // fechaRealizacionServicio: {type: Date}
 })
 
 module.exports = mongoose.model('servicios', servicioSchema)
